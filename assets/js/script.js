@@ -13,7 +13,7 @@ const convertAmount = async () => {
     }
 
     try {
-        const response = await fetch('/assets/js/mindicador.json');
+        const response = await fetch('assets/js/mindicador.json');
         if (!response.ok) {
             throw new Error('Problema al obtener los datos del archivo JSON');
         }
@@ -36,7 +36,7 @@ convertButton.addEventListener('click', convertAmount);
 
 const fillCurrencyOptions = async () => {
     try {
-        const response = await fetch('/assets/js/mindicador.json');
+        const response = await fetch('assets/js/mindicador.json');
         if (!response.ok) {
             throw new Error('Problema al obtener los datos del archivo JSON');
         }
